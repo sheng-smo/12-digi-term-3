@@ -1,4 +1,16 @@
-body {
-    background-color: #5b6ee1;
+@font-face {
+    font-family: balatro;
+    src: url(balatro.otf);
 }
 
+body {
+    background-color: #5b6ee1;
+    font-family: "balatro";
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#center {
+    text-align: center;
+}
