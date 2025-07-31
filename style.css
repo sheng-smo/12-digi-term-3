@@ -11,6 +11,17 @@ body {
     color: #ffffff;
 }
 
-#center {
+.center {
     text-align: center;
+}
+
+.awesomebox {
+    border: 5px solid #ffffff;
+    padding: 10px;
+    background-color: #4153b4;
+}
+
+.image {
+    width: 95%;
+    padding: 2.5%;
 }
