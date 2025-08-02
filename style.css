@@ -1,86 +1,148 @@
 @font-face {
-    font-family: balatro;
-    src: url(asset/balatro.otf);
+  font-family: balatro;
+  src: url(asset/balatro.otf);
 }
 
 body {
-    background-color: #5b6ee1;
-    font-family: "balatro";
-    letter-spacing: 0.1rem;
-    font-size: 20px;
-    line-height: 1.2em;
-    color: #ffffff;
+  background-color: #5b6ee1;
+  font-family: "balatro";
+  letter-spacing: 0.1rem;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #ffffff;
+
+  margin: 0;
+  /* scrollbar-color: #000000 #ffffff; */
+}
+
+img { 
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated;                 /* Universal support since 2021   */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .awesomebox {
-    border: 5px solid #ffffff;
-    padding: 5px;
-    background-color: #4153b4;
-}
-
-.image {
-    width: 95%;
-    padding: 2.5%;
+  border: 5px solid #ffffff;
+  padding: 5px;
+  background-color: #4153b4;
 }
 
 .topBar {
-    position: fixed;
-    background-color: #ffffffa3;
-    width: 100%;
-    /* height: 50px; */
-    margin: 0px;
-    top: 0px;
-    left: 0px;
-    text-align: center;
-    overflow: hidden;
-    word-spacing: -1em;
-    z-index: 100;
+  position: fixed;
+  background-color: #ffffffa3;
+  width: 100%;
+  /* height: 50px; */
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  overflow: hidden;
+  word-spacing: -1em;
+  z-index: 100;
 }
 
 .topBar a {
-    /* float: none; */
-    display: inline-block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.5rem;
+  /* float: none; */
+  display: inline-block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .topBar a:hover {
-    background-color: #ffffffff;
+  background-color: #ffffffff;
 }
 
 .topBar a.active {
-    background-color: #5be15d;
+  background-color: #5be15d;
 }
 
-.header img{
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -10;
-    filter: brightness(75%)
+.header img {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -10;
+  filter: brightness(80%);
 }
 
 .main {
-    position: absolute;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    left: 0px;
-    top: 250px;
-    background-color: #5b6ee1;
+  position: absolute;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  left: 0px;
+  top: 56.3vw;
+  z-index: 7;
+  background-color: #5b6ee1;
 }
 
 .title {
-    position: absolute;
-    top: -100px;
-    left: 50%;
-    transform: translate(50%, 0);
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  font-size: 3em;
+  transform: translate(0, 0);
 }
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  scrollbar-width: none;
+
+  perspective: 1px;
+}
+
+.parallax-layer {
+  position: absolute;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: 100%;
+}
+
+.parallax-layer.layer1 {
+  background-image: url(asset/parallax/background.png);
+  transform: translate3d(-11px, 1px, -10px) scale(13.00);
+  z-index: 2;
+}
+
+.parallax-layer.layer2 {
+  background-image: url(asset/parallax/distance.png);
+  transform: translate3d(0px, 0px, -8px) scale(10.08);
+  z-index: 3;
+}
+
+.parallax-layer.layer3 {
+  background-image: url(asset/parallax/midrange.png);
+  transform: translate3d(0px, 0px, -6px) scale(8.06);
+  z-index: 4;
+}
+
+.parallax-layer.layer4 {
+  background-image: url(asset/parallax/focus.png);
+  transform: translate3d(0px, 0px, -1.5px) scale(2.5);
+  z-index: 5;
+}
+
+.parallax-layer.layer5 {
+  background-image: url(asset/parallax/close.png);
+  transform: translate3d(0px, 0px, -1px) scale(2.015);
+  z-index: 6;
+}
+
