@@ -7,7 +7,8 @@ window.onload = function start() {
 
 function loop() {
     window.setInterval(function() {
-        document.getElementById("ticker").innerHTML = rea
+        document.getElementById("title").style.transform = "translate3d(-50%, 20vw, -10px) rotate3d(0, 1, 0, "+rea+"deg)";
+        // document.getElementById("ticker").innerHTML = rea;
         rea++;
     }, 0)
 }

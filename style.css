@@ -84,16 +84,20 @@ img {
   padding: 0px;
   left: 0px;
   top: 50vw;
-  z-index: 7;
+  z-index: 10;
   background-color: #5b6ee1;
 }
 
 .title {
-  position: absolute;
-  top: -50vw;
+  position: fixed;
+  top: 0px;
   left: 50%;
   font-size: 3em;
-  transform: translate(0, 20vw);
+  width: 50vw;
+  z-index: 10;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, 20vw, 0px);
+  perspective: 100px;
 }
 
 .parallax {
