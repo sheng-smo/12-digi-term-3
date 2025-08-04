@@ -89,7 +89,7 @@ img {
 }
 
 .title {
-  position: fixed;
+  position: relative;
   top: 0px;
   left: 50%;
   font-size: 3em;
@@ -97,7 +97,7 @@ img {
   z-index: 10;
   transform-style: preserve-3d;
   transform: translate3d(-50%, 20vw, 0px);
-  perspective: 100px;
+  perspective: 1px;
 }
 
 .parallax {
@@ -105,7 +105,7 @@ img {
   overflow-x: hidden;
   scrollbar-width: none;
 
-  perspective: 1px;
+  perspective: 100px;
 }
 
 .parallax-layer {
@@ -122,37 +122,37 @@ img {
 
 .parallax-layer.layer1 {
   background-image: url(asset/parallax/shaders/sky.png);
-  transform: translate3d(0px, 0px, -20px) scale(21);
+  transform: translate3d(0px, 0px, -200px) scale(3);
   z-index: 2;
 }
 
 .parallax-layer.layer2 {
   background-image: url(asset/parallax/shaders/distance.png);
-  transform: translate3d(0px, 0px, -6px) scale(7);
+  transform: translate3d(0px, 0px, -60px) scale(1.6);
   z-index: 3;
 }
 
 .parallax-layer.layer3 {
   background-image: url(asset/parallax/shaders/midrange.png);
-  transform: translate3d(0px, 0px, -3px) scale(4);
+  transform: translate3d(0px, 0px, -30px) scale(1.3);
   z-index: 4;
 }
 
 .parallax-layer.layer4 {
   background-image: url(asset/parallax/shaders/focus.png);
-  transform: translate3d(0px, 0px, -1.5px) scale(2.5);
+  transform: translate3d(0px, 0px, -15px) scale(1.15);
   z-index: 5;
 }
 
 .parallax-layer.layer5 {
   background-image: url(asset/parallax/shaders/close.png);
-  transform: translate3d(0px, 0px, -1px) scale(2);
+  transform: translate3d(0px, 0px, -10px) scale(1.1);
   z-index: 6;
 }
 
 .parallax-layer.layer6 {
   background-image: url(asset/parallax/shaders/clouds.png);
-  transform: translate3d(0px, 0px, -7px) scale(8);
+  transform: translate3d(0px, 0px, -70px) scale(1.7);
   z-index: 2;
 }
 
