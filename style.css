@@ -13,6 +13,7 @@ body {
 
   margin: 0;
   /* scrollbar-color: #000000 #ffffff; */
+  scrollbar-width: none;
 }
 
 img { 
