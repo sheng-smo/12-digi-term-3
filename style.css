@@ -15,17 +15,16 @@ body {
   /* scrollbar-color: #000000 #ffffff; */
   scrollbar-width: none;
 }
-
+/* 
 img { 
-  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-  image-rendering: -moz-crisp-edges;          /* Firefox                        */
-  image-rendering: -o-crisp-edges;            /* Opera                          */
-  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-  image-rendering: pixelated;                 /* Universal support since 2021   */
-  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-
-}
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;   
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;           
+  image-rendering: optimize-contrast;     
+  -ms-interpolation-mode: nearest-neighbor; 
+} */
 
 .center {
   text-align: center;
@@ -69,14 +68,22 @@ img {
   background-color: #5be15d;
 }
 
+.header {
+  object-fit: none;
+}
+
 .header img {
   width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -10;
-  filter: brightness(80%);
+  height: 400px;
+  object-fit: cover;
+  
+  object-position: 0px 60%;
+  /* position: absolute; */
+  /* top: 0px; */
+  /* left: 0px; */
+  /* z-index: -10; */
 }
+
 
 .main {
   position: absolute;
