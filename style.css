@@ -193,11 +193,28 @@ p {
   text-align: center;
 }
 
-.contents {
+/* .contents {
   margin: auto;
   text-align: center;
 }
 
 .contents td {
   border: 0px solid black;
+} */
+
+.content {
+  display: none;
+}
+
+#toggle:checked ~ .content {
+  display: block;
+}
+
+.hidden {
+  position: absolute; 
+  left: -100vw;
+}
+
+label {
+  cursor: pointer;
 }
