@@ -202,17 +202,26 @@ p {
   border: 0px solid black;
 } */
 
-.content {
+.s1content ,.s2content,.s3content,.s4content,.s5content,.s6content,.s7content {
   display: none;
 }
 
-#toggle:checked ~ .content {
+.s1label {
+  background-color: #000000;
+}
+
+#s1toggle:checked ~ .s1content, 
+#s2toggle:checked ~ .s2content,
+#s3toggle:checked ~ .s3content,
+#s4toggle:checked ~ .s4content,
+#s5toggle:checked ~ .s5content,
+#s6toggle:checked ~ .s6content,
+#s7toggle:checked ~ .s7content {
   display: block;
 }
 
 .hidden {
-  position: absolute; 
-  left: -100vw;
+  display: none;
 }
 
 label {
