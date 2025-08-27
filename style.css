@@ -175,10 +175,17 @@ img {
 } 
 
 .coolbox h1 {
-  text-align: center;
+  /* text-align: center; */
+  margin-left: 30px;
 }
 
 .seasons {
+  width: 100%;
+  border-collapse: collapse;
+  border:1px solid black;
+}
+
+.members {
   width: 100%;
   border-collapse: collapse;
   border:1px solid black;
@@ -189,8 +196,8 @@ img {
 }
 
 p {
-  margin: 4px;
-  text-align: center;
+  margin: 5px;
+  /* text-align: center; */
 }
 
 /* .contents {
