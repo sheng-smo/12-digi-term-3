@@ -213,10 +213,6 @@ p {
   display: none;
 }
 
-.s1label {
-  background-color: #000000;
-}
-
 #s1toggle:checked ~ .s1content, 
 #s2toggle:checked ~ .s2content,
 #s3toggle:checked ~ .s3content,
@@ -224,6 +220,20 @@ p {
 #s5toggle:checked ~ .s5content,
 #s6toggle:checked ~ .s6content,
 #s7toggle:checked ~ .s7content {
+  display: block;
+}
+
+.m1content, .m2content, .m3content, .m4content, .m5content, .m6content, .m7content {
+  display: none;
+}
+
+#m1toggle:checked ~ .m1content, 
+#m2toggle:checked ~ .m2content,
+#m3toggle:checked ~ .m3content,
+#m4toggle:checked ~ .m4content,
+#m5toggle:checked ~ .m5content,
+#m6toggle:checked ~ .m6content,
+#m7toggle:checked ~ .m7content {
   display: block;
 }
 
