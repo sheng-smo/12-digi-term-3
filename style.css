@@ -5,7 +5,7 @@
 
 body {
   background-color: #5b6ee1;
-  font-family: "balatro";
+  font-family: "Arial";
   letter-spacing: 0.1rem;
   font-size: 20px;
   line-height: 1.2em;
@@ -15,7 +15,7 @@ body {
   /* scrollbar-color: #000000 #ffffff; */
   scrollbar-width: none;
 }
-/* 
+
 img { 
   image-rendering: optimizeSpeed;
   image-rendering: -moz-crisp-edges;
@@ -24,7 +24,7 @@ img {
   image-rendering: pixelated;           
   image-rendering: optimize-contrast;     
   -ms-interpolation-mode: nearest-neighbor; 
-} */
+}
 
 .center {
   text-align: center;
@@ -48,6 +48,7 @@ img {
   overflow: hidden;
   word-spacing: -1em;
   z-index: 100;
+  font-family: 'balatro';
 }
 
 .topBar a {
@@ -177,6 +178,7 @@ img {
 .coolbox h1 {
   /* text-align: center; */
   margin-left: 30px;
+  font-family: 'balatro';
 }
 
 .seasons {
