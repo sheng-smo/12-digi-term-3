@@ -193,14 +193,22 @@ img {
   border:1px solid black;
 }
 
-.seasons th, td{
-  border: 1px solid black
+.members th, .members td{
+  border: 1px solid black;
+  width: 33%;
+  vertical-align: middle;
 }
 
-p {
+.members tr td p,
+.members tr td a {
+  display: block;
   margin: 5px;
-  /* text-align: center; */
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  /* transform: translateY(-0.5vh); */
 }
+
 
 /* .contents {
   margin: auto;
@@ -245,4 +253,24 @@ p {
 
 label {
   cursor: pointer;
+}
+
+.m_ryling img{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.profile,
+.profile tr {
+  border: 1px solid black;
+  width: calc(33% + 100px);
+  margin-left: auto;
+  border-collapse: collapse;
+}
+
+.profile tr td img {
+  object-fit: fill;
+  width: 100%;
+  height: 20%;
 }
