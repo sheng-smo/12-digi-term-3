@@ -206,9 +206,17 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
+  font-size: 2.5vw;
+  letter-spacing: 0.1vw;
+  line-height: 3vw;
   /* transform: translateY(-0.5vh); */
 }
 
+.members img{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
 
 /* .contents {
   margin: auto;
@@ -253,12 +261,6 @@ img {
 
 label {
   cursor: pointer;
-}
-
-.m_ryling img{
-  display: block;
-  width: 100%;
-  margin: auto;
 }
 
 .profile,
