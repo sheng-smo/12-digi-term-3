@@ -130,7 +130,7 @@ img {
   background-size: 100%;
 }
 
-/* .parallax-layer.layer1 {
+.parallax-layer.layer1 {
   background-image: url(asset/parallax/shaders/sky.png);
   transform: translate3d(0px, 0px, -200px) scale(3);
   z-index: 2;
@@ -164,9 +164,9 @@ img {
   background-image: url(asset/parallax/shaders/clouds.png);
   transform: translate3d(0px, 0px, -70px) scale(1.7);
   z-index: 2;
-} */
+}
 
-.parallax-layer.layer1 {
+/* .parallax-layer.layer1 {
   background-image: url(asset/parallax/unused/sky.png);
   transform: translate3d(0px, 0px, -200px) scale(3);
   z-index: 2;
@@ -200,7 +200,7 @@ img {
   background-image: url(asset/parallax/unused/clouds.png);
   transform: translate3d(0px, 0px, -70px) scale(1.7);
   z-index: 2;
-}
+} */
 
 .coolbox {
   background-color: #4153b4;
