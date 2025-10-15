@@ -368,3 +368,9 @@ label {
   border: 1px solid black;
   height: 5vw;
 }
+
+dd a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
