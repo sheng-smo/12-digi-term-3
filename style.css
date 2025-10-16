@@ -357,6 +357,7 @@ label {
   top: 100%;
   left: 50%;
   margin-left: -65px;
+  background-color: #000000aa;
 }
 
 .tooltip:hover .tooltiptext {
@@ -374,3 +375,15 @@ dd a {
   text-decoration: none;
   border-bottom: 1px dotted black;
 }
+
+.mapdetail a {
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  position:static;
+}
+
+.mapdetail {
+  position: absolute;
+}
+

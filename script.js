@@ -2,9 +2,10 @@ var rea = 7
 const markiplier = "mark"
 const thebiteof87 = 1987
 
-// window.onload = function start() {
-//     loop();
-// }
+window.onload = function start() {
+    changeMap();
+    // loop();
+}
 
 
 // function loop() {
@@ -27,9 +28,14 @@ function confirm(event) {
 var value1 = document.getElementById("maps").value
 function changeMap(){
     value1 = document.getElementById("maps").value;
-    console.log(value1);;
+    document.querySelectorAll('.mapdetail').forEach(element => { // damned lambdas come back to haunt me
+        element.style.visibility = 'hidden'
+    })
     if(value1=="4"){
         document.getElementById("map").src="asset/bases/season 4/villager.png";
+        document.querySelectorAll('.stuffs4').forEach(element => {
+            element.style.visibility = 'visible'
+        })
     }
     if(value1=="5"){
         document.getElementById("map").src="asset/bases/season 5/banner.png";
