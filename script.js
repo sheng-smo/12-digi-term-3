@@ -3,6 +3,7 @@ const markiplier = "mark"
 const thebiteof87 = 1987
 
 window.onload = function start() {
+document.getElementById("maps").value = "7"
     changeMap();
     // loop();
 }
@@ -32,18 +33,27 @@ function changeMap(){
         element.style.visibility = 'hidden'
     })
     if(value1=="4"){
-        document.getElementById("map").src="asset/bases/season 4/villager.png";
+        document.getElementById("map").src="asset/bases/season 4/map.png";
         document.querySelectorAll('.stuffs4').forEach(element => {
             element.style.visibility = 'visible'
         })
     }
     if(value1=="5"){
-        document.getElementById("map").src="asset/bases/season 5/banner.png";
+        document.getElementById("map").src="asset/bases/season 5/map.png";
+        document.querySelectorAll('.stuffs5').forEach(element => {
+            element.style.visibility = 'visible'
+        })
     }
     if(value1=="6"){
-        document.getElementById("map").src="asset/bases/season 6/10-09-2025,utah.png";
+        document.getElementById("map").src="asset/bases/season 6/map.png";
+        document.querySelectorAll('.stuffs6').forEach(element => {
+            element.style.visibility = 'visible'
+        })
     }
     if(value1=="7"){
-        document.getElementById("map").src="asset/bases/season 7/isladehatsunemiku.png";
+        document.getElementById("map").src="asset/bases/season 7/map.png";
+        document.querySelectorAll('.stuffs7').forEach(element => {
+            element.style.visibility = 'visible'
+        })
     }
 }
