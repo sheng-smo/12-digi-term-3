@@ -3,7 +3,7 @@ const markiplier = "mark"
 const thebiteof87 = 1987
 
 window.onload = function start() {
-document.getElementById("maps").value = "7"
+document.getElementById("maps").value = "4"
     changeMap();
     // loop();
 }
@@ -25,7 +25,7 @@ function confirm(event) {
         document.getElementById("thisisthethingthatchanges").innerHTML = document.getElementById("thisisthethingthatchanges").innerHTML + "<br>" + value
     }
 }
-
+// changes map 
 var value1 = document.getElementById("maps").value
 function changeMap(){
     value1 = document.getElementById("maps").value;
